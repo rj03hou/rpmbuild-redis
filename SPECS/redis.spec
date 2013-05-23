@@ -13,8 +13,7 @@ Source0:          http://redis.googlecode.com/files/%{name}-%{version}.tar.gz
 Source1:          %{name}.conf
 BuildRoot:        %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
-ExclusiveArch	  x86-64
-
+ExcludeArch:      ppc ppc64
 
 %description
 Redis is an advanced key-value store. It is similar to memcached but the data
